@@ -8,5 +8,5 @@ import retrofit2.http.Path
 interface TMDBInterface {
 
     @GET("movie/{movieId}")
-    fun getMovieDetails(@Path("movieID")id: Int): Single<MovieDetails>
+    fun getMovieDetails(@Path("movieId")id: Int): Single<MovieDetails>
 }

@@ -10,13 +10,15 @@ import java.util.concurrent.TimeUnit
 const val API_KEY = "362d92e5c569eabab55c68f9f6c631ad"
 const val BASE_URL = "https://api.themoviedb.org/3/"
 
-const val POSTER_BASE_URL = "https://image.tmbd.org/t/p/w342"
+const val POSTER_BASE_URL = "https://image.tmdb.org/t/p/w342"
 
 
 object TMDBClient {
-    fun getClient(): TMDBInterface{
+    fun getClient(): TMDBInterface {
 
-        val requestInterceptor = Interceptor{ chain ->
+        val requestInterceptor = Interceptor { chain ->
+            // Interceptor take only one argument which is a lambda function so parenthesis can be omitted
+
             val url = chain.request()
                 .url()
                 .newBuilder()
@@ -28,12 +30,12 @@ object TMDBClient {
                 .url(url)
                 .build()
 
-            return@Interceptor chain.proceed(request)
-
+            return@Interceptor chain.proceed(request)   //explicitly return a value from whit @ annotation. lambda always returns the value of the last expression implicitly
         }
+
         val okHttpClient = OkHttpClient.Builder()
             .addInterceptor(requestInterceptor)
-            .connectTimeout(60,TimeUnit.SECONDS)
+            .connectTimeout(60, TimeUnit.SECONDS)
             .build()
 
         return Retrofit.Builder()
@@ -43,5 +45,6 @@ object TMDBClient {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(TMDBInterface::class.java)
+
     }
 }

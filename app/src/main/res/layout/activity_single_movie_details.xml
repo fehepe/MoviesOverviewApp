@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewSingleMovieDetails"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".single_movie_details.SingleMovieDetails">
+    tools:context=".ui.single_movie_details.SingleMovieDetails">
 
 
     <LinearLayout
@@ -28,7 +29,7 @@
             android:visibility="gone"/>
 
         <ScrollView
-            app:layout_constraintTop_toTopOfs="parent"
+            app:layout_constraintTop_toTopOf="parent"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
