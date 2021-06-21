@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MoviesOverviewApp">
         <activity android:name="com.example.moviesoverviewapp.ui.single_movie_details.SingleMovieDetails"></activity>
-        <activity android:name=".ui.MainActivity">
+        <activity android:name=".ui.movie_main_page.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

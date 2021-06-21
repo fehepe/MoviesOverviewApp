@@ -44,7 +44,7 @@
                     android:layout_height="450dp"
                     android:layout_gravity="center"
                     android:scaleType="matrix"
-                    android:src="@drawable/ic_launcher_background"/>
+                    android:src="@drawable/poster_placeholder"/>
 
                 <LinearLayout
 
