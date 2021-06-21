@@ -6,8 +6,8 @@ items should contain an image and a title. On tapping the item from the list it 
 a new screen displaying further details. You can use any API you prefer for fetching the
 data.
 
-![https://github.com/fehepe/MoviesOverviewApp/blob/master/Movies.PNG](Movies.png)
-![https://github.com/fehepe/MoviesOverviewApp/blob/master/MovieDetail.PNG](MovieDetail.png)
+![Movies](../Movies.png)
+![MovieDetail](../MovieDetail.png)
 
 ##  Tech stack:
 
