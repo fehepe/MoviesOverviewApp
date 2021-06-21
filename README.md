@@ -6,8 +6,8 @@ items should contain an image and a title. On tapping the item from the list it 
 a new screen displaying further details. You can use any API you prefer for fetching the
 data.
 
-![Movies](../Movies.png)
-![MovieDetail](../MovieDetail.png)
+![Movies](Movies.PNG)
+![MovieDetail](MovieDetail.PNG)
 
 ##  Tech stack:
 
