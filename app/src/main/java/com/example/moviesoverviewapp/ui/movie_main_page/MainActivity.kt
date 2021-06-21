@@ -24,6 +24,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
+
         val apiService : TMDBInterface = TMDBClient.getClient()
 
         movieRepository = MoviePagedListRepository(apiService)
